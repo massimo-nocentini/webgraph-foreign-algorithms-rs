@@ -1,0 +1,11 @@
+[package]
+name = "webgraph-foreign-algorithms"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+webgraph = { git = "https://github.com/vigna/webgraph-rs" }
+igraph = { git = "https://github.com/massimo-nocentini/igraph-rs" }
+
+[profile.release]
+opt-level = 3
