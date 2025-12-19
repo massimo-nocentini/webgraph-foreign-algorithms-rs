@@ -184,9 +184,9 @@ checksum = "37b2a672a2cb129a2e41c10b1224bb368f9f37a2b16b612598138befd7b37eb5"
 
 [[package]]
 name = "cc"
-version = "1.2.49"
+version = "1.2.50"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "90583009037521a116abf44494efecd645ba48b6622457080f080b85544e2215"
+checksum = "9f50d563227a1c37cc0a263f64eca3334388c01c5e4c4861a9def205c614383c"
 dependencies = [
  "find-msvc-tools",
  "jobserver",
@@ -529,15 +529,14 @@ dependencies = [
 
 [[package]]
 name = "epserde"
-version = "0.11.4"
+version = "0.11.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a65a024894e2cb6ebd20d651f27d2607c2aafb6044ef24551101eb2c2b7b51e6"
+checksum = "d8dffc01a379703ad5178f47a22aa532f5811b3ef45979ccd66b79da9856770b"
 dependencies = [
  "anyhow",
  "bitflags 2.10.0",
  "common_traits",
  "epserde-derive",
- "maligned",
  "mem_dbg",
  "mmap-rs",
  "sealed",
@@ -651,7 +650,7 @@ checksum = "b9e0384b61958566e926dc50660321d12159025e767c18e043daf26b70104c39"
 [[package]]
 name = "igraph"
 version = "0.1.0"
-source = "git+https://github.com/massimo-nocentini/igraph-rs#8f1107d7c274699a4e11adce86ef47343cf904ad"
+source = "git+https://github.com/massimo-nocentini/igraph-rs#e164c47f60b5e46370a04fe127070575bcad0a3a"
 
 [[package]]
 name = "impl-tools"
@@ -856,19 +855,12 @@ dependencies = [
 ]
 
 [[package]]
-name = "maligned"
-version = "0.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7e88c3cbe8288f77f293e48a28b3232e3defd203a6d839fa7f68ea4329e83464"
-
-[[package]]
 name = "mem_dbg"
 version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "256baafaaed96f2358e588047add018b8e5f1fc58e1cb58deb026528dd42488e"
 dependencies = [
  "bitflags 2.10.0",
- "maligned",
  "mem_dbg-derive",
  "mmap-rs",
 ]

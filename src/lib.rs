@@ -35,7 +35,7 @@ fn webgraph_to_igraph(graph_filename: &str, directed: bool) -> igraph_t {
         }
     }
 
-    eprint!(
+    eprintln!(
         "Prepared edge list with {} edges in {:?}",
         graph.num_arcs(),
         instant.elapsed()
@@ -54,6 +54,6 @@ mod tests {
     fn test_webgraph_to_igraph() {
         let igraph = webgraph_to_igraph("/Users/mn/Data/bitcoin/pg/pg", true);
         eprintln!("Mean degree {}", igraph.mean_degree(true));
-        eprintln!("Diameter {}", igraph.diameter());
+        igraph.write_graph_graphml("pg.graphml");
     }
 }
