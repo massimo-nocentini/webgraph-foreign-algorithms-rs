@@ -14,7 +14,7 @@ fn webgraph_to_igraph(graph_filename: &str, directed: bool) -> igraph_t {
 
     let instant = Instant::now();
 
-    let mut igraph = igraph_t::new(graph.num_nodes(), true);
+    let mut igraph = igraph_t::new(graph.num_nodes(), directed);
 
     eprintln!(
         "Created empty igraph with {} nodes in {:?}",
