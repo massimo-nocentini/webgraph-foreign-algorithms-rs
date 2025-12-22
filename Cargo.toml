@@ -6,6 +6,7 @@ edition = "2024"
 [dependencies]
 webgraph = { git = "https://github.com/vigna/webgraph-rs" }
 igraph = { git = "https://github.com/massimo-nocentini/igraph-rs" }
+rustworkx-core = "0.17.1"
 
 [profile.release]
 opt-level = 3
